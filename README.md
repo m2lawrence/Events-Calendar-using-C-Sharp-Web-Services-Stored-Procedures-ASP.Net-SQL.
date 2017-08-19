@@ -20,8 +20,7 @@ MY GUIDE that I created to learn Web Services correctly.
 
 5. Create the Web Method:
 [WebMethod]
-        public int InsertDetail(string Date, string Event)
-        {
+        public int InsertDetail(string Date, string Event)        {
             int resultRecord = 0;
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString))
             {
@@ -45,7 +44,7 @@ MY GUIDE that I created to learn Web Services correctly.
 
 7. Create a new empty project called ServiceConsume in the same folder.
 
-t8. RC Project, add, Service Reference. Click Advanced, Click Web Service Reference, paste the URL in, click the right arrow, 
+8. RC Project, add, Service Reference. Click Advanced, Click Web Service Reference, paste the URL in, click the right arrow, 
 name it: ServiceRef.
 
 9. Add a Web Form Default.aspx and create a table with three text boxes, a label, and a submit button:
